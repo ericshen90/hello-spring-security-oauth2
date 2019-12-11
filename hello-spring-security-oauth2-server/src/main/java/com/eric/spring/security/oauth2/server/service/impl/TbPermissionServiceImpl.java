@@ -1,9 +1,9 @@
 package com.eric.spring.security.oauth2.server.service.impl;
 
-import com.eric.spring.security.oauth2.server.entity.TbPermission;
-import com.eric.spring.security.oauth2.server.dao.TbPermissionDao;
-import com.eric.spring.security.oauth2.server.service.TbPermissionService;
 import com.baomidou.mybatisplus.extension.service.impl.ServiceImpl;
+import com.eric.spring.security.oauth2.server.dao.TbPermissionDao;
+import com.eric.spring.security.oauth2.server.entity.TbPermission;
+import com.eric.spring.security.oauth2.server.service.TbPermissionService;
 import java.util.List;
 import org.springframework.stereotype.Service;
 

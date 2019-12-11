@@ -5,7 +5,6 @@ import com.eric.spring.security.oauth2.server.entity.TbPermission;
 import com.eric.spring.security.oauth2.server.entity.TbUser;
 import com.eric.spring.security.oauth2.server.service.TbPermissionService;
 import com.eric.spring.security.oauth2.server.service.TbUserService;
-import java.util.Arrays;
 import java.util.List;
 import javax.annotation.Resource;
 import org.assertj.core.util.Lists;

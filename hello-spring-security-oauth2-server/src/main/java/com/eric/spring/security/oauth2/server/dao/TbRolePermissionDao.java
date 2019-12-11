@@ -1,7 +1,7 @@
 package com.eric.spring.security.oauth2.server.dao;
 
-import com.eric.spring.security.oauth2.server.entity.TbRolePermission;
 import com.baomidou.mybatisplus.core.mapper.BaseMapper;
+import com.eric.spring.security.oauth2.server.entity.TbRolePermission;
 
 /**
  * <p>

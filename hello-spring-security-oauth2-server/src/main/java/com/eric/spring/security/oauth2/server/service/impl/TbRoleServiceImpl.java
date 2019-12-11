@@ -1,9 +1,9 @@
 package com.eric.spring.security.oauth2.server.service.impl;
 
-import com.eric.spring.security.oauth2.server.entity.TbRole;
-import com.eric.spring.security.oauth2.server.dao.TbRoleDao;
-import com.eric.spring.security.oauth2.server.service.TbRoleService;
 import com.baomidou.mybatisplus.extension.service.impl.ServiceImpl;
+import com.eric.spring.security.oauth2.server.dao.TbRoleDao;
+import com.eric.spring.security.oauth2.server.entity.TbRole;
+import com.eric.spring.security.oauth2.server.service.TbRoleService;
 import org.springframework.stereotype.Service;
 
 /**

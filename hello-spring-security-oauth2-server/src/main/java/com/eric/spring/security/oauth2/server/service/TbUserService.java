@@ -1,7 +1,7 @@
 package com.eric.spring.security.oauth2.server.service;
 
-import com.eric.spring.security.oauth2.server.entity.TbUser;
 import com.baomidou.mybatisplus.extension.service.IService;
+import com.eric.spring.security.oauth2.server.entity.TbUser;
 
 /**
  * <p>
