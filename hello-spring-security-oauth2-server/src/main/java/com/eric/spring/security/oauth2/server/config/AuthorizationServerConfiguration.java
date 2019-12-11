@@ -27,9 +27,6 @@ import org.springframework.security.oauth2.provider.token.store.JdbcTokenStore;
 @EnableAuthorizationServer
 public class AuthorizationServerConfiguration extends AuthorizationServerConfigurerAdapter {
 
-  @Resource
-  private BCryptPasswordEncoder passwordEncoder;
-
   @Bean
   @Primary
   @ConfigurationProperties(prefix = "spring.datasource")
@@ -51,7 +48,7 @@ public class AuthorizationServerConfiguration extends AuthorizationServerConfigu
   }
 
   @Override
-  public void configure(AuthorizationServerEndpointsConfigurer endpoints) throws Exception {
+  public void configure(AuthorizationServerEndpointsConfigurer endpoints) {
     // 设置令牌存储模式
     endpoints.tokenStore(tokenStore());
   }

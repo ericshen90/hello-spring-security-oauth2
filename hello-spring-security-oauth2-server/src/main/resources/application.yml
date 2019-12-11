@@ -6,7 +6,7 @@ spring:
     name: oauth2-server
   datasource:
     type: com.zaxxer.hikari.HikariDataSource
-    driver-class-name: com.mysql.jdbc.Driver
+    driver-class-name: com.mysql.cj.jdbc.Driver
     jdbc-url: jdbc:mysql://127.0.0.1:3306/oauth2?useUnicode=true&characterEncoding=utf-8&useSSL=false
     username: root
     password: 123456
@@ -19,3 +19,11 @@ spring:
       max-lifetime: 1800000
       connection-timeout: 30000
       connection-test-query: SELECT 1
+
+mybatis-plus:
+  mapper-locations: classpath*:mapper/*Mapper.xml
+#  type-aliases-package: com.eric.spring.security.oauth2.server.entity
+
+logging:
+  level:
+    com.eric.spring.security.oauth2.server: debug

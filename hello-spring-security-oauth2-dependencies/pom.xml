@@ -12,6 +12,10 @@
 
   <properties>
     <spring-cloud.version>Greenwich.SR4</spring-cloud.version>
+    <mybatis-plus.version>3.3.0</mybatis-plus.version>
+    <velocity-engine-core.version>2.1</velocity-engine-core.version>
+    <HikariCP.version>3.4.1</HikariCP.version>
+    <mysql.version>8.0.18</mysql.version>
   </properties>
 
   <licenses>
@@ -38,6 +42,37 @@
         <version>${spring-cloud.version}</version>
         <type>pom</type>
         <scope>import</scope>
+      </dependency>
+
+      <!-- MybatisPlus -->
+      <dependency>
+        <groupId>com.baomidou</groupId>
+        <artifactId>mybatis-plus-boot-starter</artifactId>
+        <version>${mybatis-plus.version}</version>
+      </dependency>
+      <dependency>
+        <groupId>com.baomidou</groupId>
+        <artifactId>mybatis-plus-generator</artifactId>
+        <version>${mybatis-plus.version}</version>
+      </dependency>
+      <dependency>
+        <groupId>org.apache.velocity</groupId>
+        <artifactId>velocity-engine-core</artifactId>
+        <version>${velocity-engine-core.version}</version>
+      </dependency>
+
+      <!-- DataSource -->
+      <dependency>
+        <groupId>com.zaxxer</groupId>
+        <artifactId>HikariCP</artifactId>
+        <version>${HikariCP.version}</version>
+      </dependency>
+
+      <!-- MySql -->
+      <dependency>
+        <groupId>mysql</groupId>
+        <artifactId>mysql-connector-java</artifactId>
+        <version>${mysql.version}</version>
       </dependency>
     </dependencies>
   </dependencyManagement>

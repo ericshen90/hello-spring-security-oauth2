@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.eric.spring.security.oauth2.server.dao.TbPermissionDao">
+
+    <!-- 通用查询映射结果 -->
+    <resultMap id="BaseResultMap" type="com.eric.spring.security.oauth2.server.entity.TbPermission">
+        <id column="id" property="id" />
+        <result column="parent_id" property="parentId" />
+        <result column="name" property="name" />
+        <result column="enname" property="enname" />
+        <result column="url" property="url" />
+        <result column="description" property="description" />
+        <result column="created" property="created" />
+        <result column="updated" property="updated" />
+    </resultMap>
+
+    <!-- 通用查询结果列 -->
+    <sql id="Base_Column_List">
+        id, parent_id, name, enname, url, description, created, updated
+    </sql>
+
+    <select id="getPermissionByUserId" resultMap="BaseResultMap" parameterType="java.lang.Integer">
+        SELECT p.*
+        FROM tb_user u
+                 LEFT JOIN tb_user_role ur ON ur.user_id = u.id
+                 LEFT JOIN tb_role r ON ur.role_id = r.id
+                 LEFT JOIN tb_role_permission rp ON ur.role_id = rp.role_id
+                 LEFT JOIN tb_permission p ON rp.permission_id = p.id
+        WHERE u.id = ${userId}
+    </select>
+
+</mapper>

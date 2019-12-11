@@ -1,6 +1,10 @@
 SET NAMES utf8mb4;
 SET FOREIGN_KEY_CHECKS = 0;
 
+CREATE DATABASE /*!32312 IF NOT EXISTS*/`oauth2` /*!40100 DEFAULT CHARACTER SET utf8mb4 */;
+
+USE `oauth2`;
+
 -- ----------------------------
 -- Table structure for clientdetails
 -- ----------------------------
