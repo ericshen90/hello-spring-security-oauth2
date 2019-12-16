@@ -4,3 +4,7 @@ server:
 spring:
   application:
     name: oauth2-client
+
+logging:
+  level:
+    com.eric.spring.oauth2.client.controller: debug

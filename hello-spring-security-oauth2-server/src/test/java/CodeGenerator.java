@@ -44,7 +44,7 @@ public class CodeGenerator {
     String projectPath = System.getProperty("user.dir");
     System.out.println("projectPath = " + projectPath);
     gc.setOutputDir(
-        "/Users/ericshen/Code/personal/hello-spring-security-oauth2/hello-spring-security-oauth2-server"
+        "/Users/ericshen/Code/personal/hello-spring-security-oauth2/hello-spring-security-oauth2-resource"
             + "/src/main/java");
     System.out.println("gc.getOutputDir() = " + gc.getOutputDir());
     gc.setAuthor("Eric Shen");
@@ -68,7 +68,7 @@ public class CodeGenerator {
     DataSourceConfig dsc = new DataSourceConfig();
     dsc.setDbType(DbType.MYSQL);
     dsc.setUrl(
-        "jdbc:mysql://127.0.0.1:3306/oauth2?useUnicode=true&characterEncoding=utf-8&useSSL=false");
+        "jdbc:mysql://127.0.0.1:3306/resource?useUnicode=true&characterEncoding=utf-8&useSSL=false");
     // dsc.setSchemaName("public");
     dsc.setDriverName("com.mysql.jdbc.Driver");
     dsc.setUsername("root");
@@ -90,7 +90,7 @@ public class CodeGenerator {
     // 包配置
     PackageConfig pc = new PackageConfig();
     // pc.setModuleName(scanner("模块名"));
-    pc.setParent("com.eric.spring.security.oauth2.server");
+    pc.setParent("com.eric.spring.security.oauth2.resource");
     pc.setController("controller");
     pc.setMapper("dao");
     pc.setService("service");
