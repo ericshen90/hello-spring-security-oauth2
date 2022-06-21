@@ -15,7 +15,7 @@
     <mybatis-plus.version>3.3.0</mybatis-plus.version>
     <velocity-engine-core.version>2.1</velocity-engine-core.version>
     <HikariCP.version>3.4.1</HikariCP.version>
-    <mysql.version>8.0.18</mysql.version>
+    <mysql.version>8.0.28</mysql.version>
   </properties>
 
   <licenses>
